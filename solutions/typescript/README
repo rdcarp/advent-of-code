@@ -1,0 +1,11 @@
+## To Run
+
+> `npm test`
+
+> `npm start`
+
+## Development notes.
+
+I used the following guide to set up this project.
+
+> https://khalilstemmler.com/blogs/typescript/node-starter-project/
