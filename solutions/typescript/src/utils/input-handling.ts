@@ -5,6 +5,10 @@ const commaSeparatedList = function (inputText: string, separator = ",") {
   return inputText.split(separator)
 }
 
+const inputAsLines = function (inputText: string) {
+  return inputText.split(/\r?\n/)
+}
+
 const loadInput = function (year: number, day: number) {
   const zeroFilledDay = ("00" + day).slice(-2)
   return fs
@@ -17,4 +21,4 @@ const loadInput = function (year: number, day: number) {
     .toString()
 }
 
-export { commaSeparatedList, loadInput }
+export { commaSeparatedList, loadInput, inputAsLines }
